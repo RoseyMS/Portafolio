@@ -1,0 +1,32 @@
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu__header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__decoration-icon{
+    height: 24px;
+}
+.menu__title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #464646;
+    padding-left: 0.5rem;
+}
+.menu__list{
+    display: none;
+}
+.menu__list__item__contato{
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+.menu__list__item__contato a{
+    color: #464646;
+}

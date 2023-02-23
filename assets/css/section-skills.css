@@ -1,0 +1,42 @@
+section.skills{
+    display: flex;
+    flex-direction: column;
+}
+.skills__title{
+    align-self: center;
+    font-size: 22px;
+    color: #464646;
+    font-weight: bold;
+}
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 508px;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills__box{
+    width: 48%;
+    height: 27%;
+    background: #FFFFFF;
+
+}
+.skills__box ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+}
+.skills__img{
+    padding-bottom: 0.5rem;
+}
+.skills__name{
+    font-size: 16px;
+    font-weight: bold;
+    color: #464646;
+}

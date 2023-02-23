@@ -1,0 +1,28 @@
+section.title{
+    display: flex;
+    flex-direction: column;
+}
+.title__profile{
+    height: 98px;
+}
+.title__bio{
+    font-size: 22px;
+    font-weight: bold;
+    color: #464646;
+}
+.title__subsection{
+    font-size: 14px;
+    font-weight: 100;
+    color: #464646;
+}
+.title__network{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.title__network__item a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #464646;
+}
