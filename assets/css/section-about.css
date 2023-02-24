@@ -1,4 +1,8 @@
-
+section.about{
+    background: #EAF2FD;
+    padding: 1rem;
+    background: #EAF2FD;
+}
 .about__title{
     font-size: 22px;
     font-weight: bold;

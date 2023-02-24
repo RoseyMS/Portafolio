@@ -1,6 +1,7 @@
 section.hobbies{
     display: flex;
     flex-direction: column;
+    margin: 1rem;
 }
 .hobbies__title{
     align-self: center;

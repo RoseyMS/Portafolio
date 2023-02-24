@@ -1,6 +1,7 @@
 section.skills{
     display: flex;
     flex-direction: column;
+    margin: 1rem;
 }
 .skills__title{
     align-self: center;

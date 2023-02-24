@@ -27,9 +27,7 @@ a{
     color: var(--cor-de-link);
 }
 
-.tudo{
-    padding: 0 1rem ;
-}
+
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
@@ -42,20 +40,6 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
-
-
-
-/* Experiencia Académica*/
-
-section.academic{
-
-}
-
-/* experiencia*/
-
-section.experience{
-
-}
 
 /*Contacto*/
 

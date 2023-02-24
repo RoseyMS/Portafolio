@@ -1,6 +1,7 @@
 section.title{
     display: flex;
     flex-direction: column;
+    margin: 1rem;
 }
 .title__profile{
     height: 98px;
