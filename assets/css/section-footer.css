@@ -1,0 +1,18 @@
+section.footer{
+    background: #FFFFFF;
+}
+.footer__rodape{
+    width: 90vw;
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.dev__name{
+    margin-bottom: 0;
+}
+.year{
+    margin-top: 0;
+}
+

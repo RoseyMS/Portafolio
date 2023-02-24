@@ -1,40 +1,51 @@
-section.experience{
+section.experience {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
 }
-.experience__section__title{
+
+.experience__section__title {
     font-size: 22px;
     font-weight: bold;
     color: #464646;
 }
-.experience__box{
+
+.experience__box {
     width: 80vw;
 }
-.experience__img{
+
+.experience__img {
     width: 100%
 }
-.experience__info{
+
+.experience__info {
     color: #464646;
 }
-.experience__title{
+
+.experience__title {
     font-size: 16px;
     font-weight: bold;
 }
-.experience__text{
+
+.experience__text {
     font-size: 14px;
     font-weight: 500;
 }
-.experience__description button{
+
+.experience__description button {
     border-color: #2A7AE4;
     width: 108px;
     height: 40px;
+    margin-bottom: 1rem;
 }
-.experiencia__boton--repo{
-   color: #2A7AE4;
+
+.experiencia__boton--repo {
+    color: #2A7AE4;
 }
-.experience__boton--demo{
-   color: #FFFFFF;
-   background: #2A7AE4;
+
+.experience__boton--demo {
+    margin-left: 0.5rem;
+    color: #FFFFFF;
+    background: #2A7AE4;
 }
