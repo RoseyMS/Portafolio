@@ -34,18 +34,18 @@ section.experience {
 }
 
 .experience__description button {
-    border-color: #2A7AE4;
+    border-color: #5086c1;
     width: 108px;
     height: 40px;
     margin-bottom: 1rem;
 }
 
 .experiencia__boton--repo {
-    color: #2A7AE4;
+    color: #5086c1;
 }
 
 .experience__boton--demo {
     margin-left: 0.5rem;
     color: #FFFFFF;
-    background: #2A7AE4;
+    background: #5086c1;
 }

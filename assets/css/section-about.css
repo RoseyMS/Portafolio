@@ -1,14 +1,29 @@
 section.about{
     padding: 1rem;
-    background: #EAF2FD;
+    background: #a5eea0;
+    color: #464646;
 }
 .about__title{
+    text-align: center;
     font-size: 22px;
     font-weight: bold;
-    color: #464646;
+    
 }
 .about__paragraph{
     font-size: 14px;
     font-weight: 100;
-    color: #464646;
+    text-align: justify;
+}
+.about__paragraph__quote{
+    font-style: italic;
+    font-size: 13px;
+    text-align: justify;
+}
+.about__datos__list{
+    padding-left: 1rem;
+}
+.about__datos__list-items{
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    
 }

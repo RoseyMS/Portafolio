@@ -5,22 +5,25 @@ section.title{
 }
 .title__profile{
     height: 98px;
+    border-radius: 100%;
 }
 .title__bio{
     font-size: 22px;
     font-weight: bold;
     color: #464646;
+    text-align: justify;
 }
 .title__subsection{
     font-size: 14px;
     font-weight: 100;
     color: #464646;
+    text-align: justify;
 }
 .title__network{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0;
+}
+.title__network__item{
+    padding-bottom: 0.5rem;
 }
 .title__network__item a{
     font-size: 14px;

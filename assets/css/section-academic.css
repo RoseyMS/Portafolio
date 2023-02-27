@@ -1,9 +1,8 @@
 section.academic{
-    background: #EAF2FD;
+    background: #a5eea0;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    width: 90vw;
 }
 
 .academic__title{
