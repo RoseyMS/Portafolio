@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./assets/css/section-footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title> Mi Portafolio</title>
@@ -79,7 +80,8 @@
                     ámbitos posibles.
                     Poseo conocimientos en áreas tales como programación, medicina animal y seguridad.
                 </p>
-                <p class="about__paragraph__quote">"Desarrolla una pasión por el aprendizaje. Si lo haces, nunca dejaras de crecer" ~ Anthony J. D Angelo</p>
+                <p class="about__paragraph__quote">"Desarrolla una pasión por el aprendizaje. Si lo haces, nunca dejaras
+                    de crecer" ~ Anthony J. D Angelo</p>
             </div>
         </section>
 
@@ -220,13 +222,30 @@
                     <h3 class="contactform__subtext">Complete el siguiente formulario y me pondré en contacto con
                         usted lo antes posible. </h3>
                     <form class="contactform__form" name="form">
-                        <span class="contactform__label">Nombre</span><input class="contactform__input" type="text">
-                        <span class="contactform__label">Correo</span><input class="contactform__input" type="email"
-                            name="email">
-                        <span class="contactform__label">Asunto</span><input class="contactform__input" type="text"
-                            name="asunto">
-                        <span class="contactform__label">Mensaje</span><textarea class="contactform__textarea" rows="5"
-                            cols="40" id="mensagem" name="mensaje" placeholder="Escriba aquí"></textarea>
+                        <div class="element-container">
+                            <input class="contactform__input" type="text" placeholder="Nombre" data-tipo="nombre"
+                                required>
+                            <span class="element-message-error"></span>
+                        </div>
+
+                        <div class="element-container">
+                            <input class="contactform__input" type="email" name="email" placeholder="Correo"
+                                data-tipo="email" required>
+                            <span class="element-message-error"></span>
+                        </div>
+
+                        <div class="element-container">
+                            <input class="contactform__input" type="text" name="asunto" placeholder="Asunto"
+                                data-tipo="asunto" required>
+                            <span class="element-message-error"></span>
+                        </div>
+
+                        <div class="element-container">
+                            <textarea class="contactform__textarea" rows="5" cols="40" id="mensagem" name="Mensaje"
+                                placeholder="Mensaje" data-tipo="mensaje" required></textarea>
+                            <span class="element-message-error"></span>
+                        </div>
+
                         <button type="submit" class="contactform__boton">Enviar mensaje</button>
                     </form>
                 </div>
@@ -242,7 +261,7 @@
         </section>
     </div>
     <!-- Script del documento JavaScript -->
-    <script src="validacion.js"></script>
+    <script src="app.js" type="module"></script>
 </body>
 
 </html>
