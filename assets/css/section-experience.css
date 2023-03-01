@@ -8,7 +8,7 @@ section.experience {
 .experience__section__title {
     font-size: 22px;
     font-weight: bold;
-    color: #464646;
+    color: var(--cor-de-texto);
 }
 
 .experience__box {
@@ -20,7 +20,7 @@ section.experience {
 }
 
 .experience__info {
-    color: #464646;
+    color: var(--cor-de-texto);
 }
 
 .experience__title {
@@ -32,20 +32,55 @@ section.experience {
     font-size: 14px;
     font-weight: 500;
 }
+.experience__description span a{
+    color: var(--cor-de-fundo);
+}
 
 .experience__description button {
-    border-color: #5086c1;
+    border-color: var(--cor-de-boton);
     width: 108px;
     height: 40px;
     margin-bottom: 1rem;
 }
 
 .experiencia__boton--repo {
-    color: #5086c1;
+    color: var(--cor-de-boton);
 }
 
 .experience__boton--demo {
     margin-left: 0.5rem;
-    color: #FFFFFF;
-    background: #5086c1;
+    color: var(--cor-de-fund);
+    background: var(--cor-de-boton);
+}
+
+@media screen and (min-width:1024px){
+    .experience__section__title{
+        font-size: 52px;
+    }
+    .experience__box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .experience__box{
+        width: 95vw;
+    }
+    .experience__img{
+        width: 70%;
+    }
+    .experience__info{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        justify-content: center;        
+    }
+    .experience__title{
+        margin: 0;
+    }
+    .experience__text{
+        margin: 0.5rem 0 1rem 0;
+    }
+    .experience__title, .experience__text{
+        font-size: 22px;
+    }
 }

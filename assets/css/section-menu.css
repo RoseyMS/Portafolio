@@ -17,7 +17,7 @@ section.menu{
 .menu__title{
     font-size: 16px;
     font-weight: bold;
-    color: #464646;
+    color:var(--cor-de-texto);
     padding-left: 0.5rem;
 }
 .menu__list{
@@ -29,5 +29,28 @@ section.menu{
     
 }
 .menu__list__item__contato a{
-    color: #464646;
+    color:var(--cor-de-texto);
+}
+
+@media screen and (min-width: 1024px){
+    .menu__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem;
+    }
+    .menu__list__item{
+        margin: 1rem;
+    }
+    #menu__list__contacto{
+        font-weight: bold;
+    }
+    .menu__list__item__contato{
+        display: none;
+    }
+    .menu__list__item a:hover{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
 }

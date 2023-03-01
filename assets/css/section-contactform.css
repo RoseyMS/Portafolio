@@ -1,9 +1,9 @@
 section.contactform {
     padding: 1rem;
-    background: #a5eea0;
+    background: var(--cor-de-section);
     display: flex;
     flex-direction: column;
-    color: #464646;
+    color: var(--cor-de-texto);
 }
 
 .contactform__title {
@@ -24,6 +24,7 @@ section.contactform {
 }
 
 .contactform__form {
+    width: 100%;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -46,18 +47,19 @@ section.contactform {
 
     border-radius: 5px;
     border-color: transparent;
-    width: 90%;
+    width: 98%;
 
 }
 
 .contactform__input,
 .contactform__boton {
-    height: 2em;
+    height: 2.5rem;
 }
 
 .contactform__boton {
-    background: #5086c1;
-    color: #FFFFFF;
+    background: var(--cor-de-boton);
+    color: var(--cor-de-fundo);
+    width: 40%;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
@@ -80,8 +82,48 @@ section.contactform {
 }
 
 .element-container--invalid .element-message-error {
-    color: #464646;
+    color: var(--cor-de-texto);
     display: block;
     margin-top: 0.5rem;
     padding-left: 0.5rem;
 }
+
+.contactform__boton[disabled]{
+  border: 1px solid var(--cor-de-disabled-border);
+  background-color: var(--cor-de-disabled-background);
+  color: var(--cor-de-disabled);
+}
+
+@media screen and (min-width:1024px) {
+    .contactform__contacto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .contactform__img {
+        display: block;
+    }
+    .contactform--izquierda{
+        width: 35%;
+    }
+    .contactform__img{
+        padding: 3rem 0 3rem 1rem;
+        width: 90%;
+        height: 90%;
+    }
+    .contactform__text{
+        width: 60%;
+        margin-left: 1rem;
+    }
+    .contactform__title{
+        font-size: 52px;
+    }
+    .contactform__text, .contactform__subtext{
+        font-size: 22px;
+    }
+    .contactform__input, .contactform__textarea{
+        font-size: 22px;
+    }
+}
+

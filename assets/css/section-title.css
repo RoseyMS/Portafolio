@@ -9,14 +9,14 @@ section.title{
 }
 .title__bio{
     font-size: 22px;
-    font-weight: bold;
-    color: #464646;
+    font-weight: 500;
+    color:var(--cor-de-texto);
     text-align: justify;
 }
 .title__subsection{
     font-size: 14px;
     font-weight: 100;
-    color: #464646;
+    color:var(--cor-de-texto);
     text-align: justify;
 }
 .title__network{
@@ -28,5 +28,39 @@ section.title{
 .title__network__item a{
     font-size: 14px;
     font-weight: bold;
-    color: #464646;
+    color:var(--cor-de-texto);
+}
+@media screen and (min-width: 768px){
+    .title__div{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .title__profile{
+        height: 146px;
+        margin-left: 3rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .title__bio{
+        font-size: 52px;
+        text-align: left;
+    }
+    .title__profile{
+        margin-right: 3rem;
+        height: 368px;
+    }
+    .title__div{
+        margin: 2rem;
+    }
+    .title__subsection{
+        font-size: 22px;
+    }
+    .title__network__item a{
+        font-size: 22px;
+    }
+    
+
 }

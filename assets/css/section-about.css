@@ -1,7 +1,7 @@
 section.about{
     padding: 1rem;
-    background: #a5eea0;
-    color: #464646;
+    background: var(--cor-de-section);
+    color: var(--cor-de-texto);
 }
 .about__title{
     text-align: center;
@@ -26,4 +26,15 @@ section.about{
     list-style-type: disc;
     margin-bottom: 0.5rem;
     
+}
+@media screen and (min-width: 1024px){
+    .about__title{
+        font-size: 52px;
+    }
+    .about__datos, .about__objetivo{
+        font-size: 32px;
+    }
+    .about__datos__list, .about__paragraph, .about__paragraph__quote{
+        font-size: 22px;
+    }
 }
