@@ -2,17 +2,12 @@
 const boton = document.querySelector(".contactform__boton");
 const elements = document.querySelectorAll("input, textarea");
 const form = document.getElementById("contactform");
-const numeroCamposTexto = 4
-let contadorCamposTexto = 0;
+
 
 elements.forEach(element => {
     element.addEventListener("blur", (element) => {
         valida(element.target);
-        if (element.target.value != "") {
-            contadorCamposTexto++;
-        } else {
-            contadorCamposTexto--;
-        }
+        activarDesactivarBtnEnviar();
     });
 });
 boton.addEventListener("click", (event) => {
@@ -28,31 +23,38 @@ boton.addEventListener("click", (event) => {
 
 function valida(element) {
     const tipoDeElement = element.dataset.tipo;
+    const esValido = element.validity.valid;
 
-    if (element.validity.valid) {
+    if (esValido) {
         element.parentElement.classList.remove("element-container--invalid");
         element.parentElement.querySelector(".element-message-error").innerHTML = "";
-
     } else {
         element.parentElement.classList.add("element-container--invalid");
         element.parentElement.querySelector(".element-message-error").innerHTML = mostrarMensajeDeError(tipoDeElement, element);
     }
-    activarDesactivarBtnEnviar();
 }
 
 function activarDesactivarBtnEnviar() {
-    if (contadorCamposTexto == numeroCamposTexto) {
+    let activarBoton = true;
+
+    elements.forEach(element => {
+        activarBoton = element.validity.valid;
+        if (!activarBoton) {
+            return;
+        }
+    });
+
+    if (activarBoton) {
         activarBtnEnviar(boton);
     } else {
         desactivarBtnEnviar(boton);
     }
 }
 
-
 const tipoErrores = [
     "valueMissing",
-    "typeMismatch",
     "patternMismatch",
+    "typeMismatch",
 ];
 
 const mensajesDeError = {
@@ -69,9 +71,8 @@ const mensajesDeError = {
         patternMismatch: "Debe contener máximo 50 caracteres"
     },
     mensaje: {
-        valueMissing: "El campo mensaje no puede estar vacio",
-        patternMismatch: "Debe contener máximo 300 caracteres"
-    }
+        valueMissing: "El campo mensaje no puede estar vacio"
+    },
 
 }
 
@@ -85,17 +86,9 @@ function mostrarMensajeDeError(tipoDeInput, input) {
     return mensaje;
 }
 
-
-
 function activarBtnEnviar(boton) {
     boton.removeAttribute('disabled');
 }
 function desactivarBtnEnviar(boton) {
     boton.setAttribute("disabled", "");
 }
-
-
-
-
-
-
