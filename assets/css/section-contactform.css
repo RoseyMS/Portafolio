@@ -73,7 +73,7 @@ section.contactform {
 
 .element-message-error {
     display: none;
-    font-size: 12px;
+    font-size: 9px;
 }
 .element-message-error::before{
     content: url('https://api.iconify.design/uil/exclamation-triangle.svg?color=%23e65100&width=13&height=13');
